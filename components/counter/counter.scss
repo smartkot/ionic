@@ -1,0 +1,32 @@
+counter {
+  .counter {
+  	display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid color($colors, secondary);
+    border-radius: 6px;
+    height: 40px;
+    margin: 12px 0px;
+    width: 120px;
+    button.decrement, button.increment, .count {
+    	height: 100%;
+      background-color: color($colors, white);;
+      color: color($colors, secondary);
+      font-size: 1em;
+      text-align: center;
+      width: 40px; 
+    }
+    button.decrement, button.increment {
+    	border-radius: 6px;
+    }
+    .count {
+    	display: flex;
+  		align-items: center;
+  		justify-content: center;
+    	border-left: 1px solid color($colors, secondary);
+    	border-right: 1px solid color($colors, secondary);
+    	height: 36px;
+    	min-width: 40px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<div class="counter">
+  <button
+    tappable
+    class="decrement"
+    [disabled]="!count"
+    (click)="decrement($event)">
+    <ion-icon name="md-remove"></ion-icon>
+  </button>
+  <span class="count">{{ count }}</span>
+  <button
+    tappable
+    class="increment"
+    (click)="increment($event)">
+    <ion-icon name="md-add"></ion-icon>
+  </button>
+</div>

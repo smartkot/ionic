@@ -1,0 +1,8 @@
+cart {
+  .header {
+    border-bottom: 1px solid color($colors, light);
+  }
+  .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: 0px;
+  }
+}

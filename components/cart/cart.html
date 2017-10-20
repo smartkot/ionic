@@ -1,0 +1,24 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title>{{ _title }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <cart-order
+      *ngFor="let item of _mockData"
+      [title]="item.title"
+      [quantity]="item.quantity"
+      [price]="item.price"
+      [image]="item.image"
+      (cost)="clicked($event)"></cart-order>
+
+    <ion-item>
+      <h1>Сумма заказа</h1>
+      <strong item-end>{{ _summaryCost }}&nbsp;р.</strong>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

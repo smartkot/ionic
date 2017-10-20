@@ -1,0 +1,10 @@
+<ion-item>
+  <ion-thumbnail item-start>
+    <img src="{{ image }}">
+  </ion-thumbnail>
+  <h3>{{ title }}</h3>
+  <strong item-end>{{ price }} р.</strong>
+  <counter
+    [count]="quantity"
+    (countChanged)="clicked($event)"></counter>
+</ion-item>
